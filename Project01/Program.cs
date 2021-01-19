@@ -7,8 +7,8 @@ namespace Project01
         public static void Main(string[] args)
         {
             BackPack testBackPack = new BackPack();
-            Console.WriteLine("Test Back Packs current total weight: {}",
-                               testBackPack.GetTotalWeight());
+            Console.Write("Test Back Packs current total weight: ");
+            Console.WriteLine(testBackPack.GetTotalWeight());
 
             // Main pocket tests
             if(testBackPack.InsertItemsInMainPocket(10.1))
@@ -67,8 +67,8 @@ namespace Project01
                 Console.WriteLine("Item was not added successfully");
             }
 
-            Console.WriteLine("Total weight in Test Back Pack is: {}",
-                testBackPack.GetTotalWeight());
+            Console.Write("Total weight in Test Back Pack is: ");
+            Console.WriteLine(testBackPack.GetTotalWeight());
 
 
             Console.WriteLine("Hello World!");
